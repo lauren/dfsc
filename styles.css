@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+    color: #222;
+    background: #fff;
+    font-size: 17px;
+    font-family: "Karla", sans-serif;
+}
+
+a, a:active, a:visited {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px dotted rgb(198, 198, 198);
+}
+
+a:hover {
+    border-bottom: 1px solid #999;
+}
+
+a.img-link, a.img-link:active, a.img-link:visited, a.img-link:hover {
+    text-decoration: none;
+    border-bottom: 0px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0em;
+    font-weight: 300;
+    clear: both;
+}
+
+h1 {
+    font-family: "Vidaloka", serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: "Vidaloka", serif;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: "Vidaloka", serif;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family: "Karla", sans-serif;
+    font-size: 1.3em;
+}
+
+h5,
+.destination-label {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+.small-text {
+    display: block;
+    font-size: .8em;
+}
+
+.hero-container {
+    display: flex;
+    text-align: center;
+    background: url('images/glee-on-ice-header.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 -70px;
+    width: 100%;
+    min-height: 400px;
+    max-height: 415px;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+}
+
+.icon-wrapper svg {
+    display: block;
+}
+
+.banner {
+    margin: 0em 2em 2em 0em;
+    padding: 2em;
+    background: rgba(255, 255, 255, .7);
+    color: #000;
+}
+
+.logo {
+    float: left;
+    margin-right: 1em;
+}
+
+li {
+    margin-bottom: .75em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: .75em;
+    border-bottom: 1px solid #222;
+}
+
+.nav-stuck {
+    position: fixed;
+    background: #fff;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.nav-item {
+    flex: 0 1 auto;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0em 1em 0em 1em;
+}
+
+.nav-item a {
+    font-family: 'Vidaloka', serif;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.nav-item a:hover {
+    opacity: .7;
+    border-bottom: 1px dotted rgb(198, 198, 198);
+}
+
+.column-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-right,
+.content-left {
+    box-sizing: border-box;
+    width: 46%;
+}
+
+iframe {
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    margin: 2em auto;
+    height: 1px;
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(27, 110, 104, 0), rgba(27, 110, 104, 0.45), rgba(27, 110, 104, 0));
+}
+
+.footer {
+    color: #444;
+    min-height: 1em;
+    padding: 1em 1em 1.5em 1em;
+    clear: both;
+    font-size: 1em;
+}
+
+.right-footer {
+    float: right;
+    text-align: right;
+}
+
+section {
+    box-sizing: border-box;
+    width: 100%;
+    clear: both;
+    float: left;
+    padding: 4em 8em;
+}
+
+section h2 {
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+section p {
+    margin-top: 0;
+    line-height: 1.2em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+pre {
+    display: block;
+    color: #222;
+    background-color: rgba(255, 255, 255, .9);
+    text-shadow: none;
+    font-size: .8em;
+}
+
+.round-pic {
+    width: 300px;
+    margin: 2em 0 2em 6em;
+    float: right;
+}
+
+a.btn {
+    display: inline-block;
+    border-radius: 3px;
+    color: #9E5726;
+    border: 2px solid #1b6e68;
+    border-image: url('images/copper-bg-2.jpg') 2 2 stretch;
+    background: none;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    white-space: nowrap;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    -webkit-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
+    -moz-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
+    -o-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
+    -ms-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
+    transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
+}
+
+a.btn:hover,
+a.btn:focus {
+    background-color: #1b6e68;
+    background: url('images/copper-bg-2.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+/* utility classes */
+
+.display-inline {
+    display: inline-block;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.bg-blue {
+    color: #fff;
+}
+
+.bg-dkblue {
+    background-color: #2d3091;
+}
+
+.bg-ltblue {
+    background-color: #58c0ea;
+}
+
+.bg-blue a {
+    cursor: pointer;
+}
+
+.bg-blue a, .bg-blue a:visited, .bg-blue a:active {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+}
+
+.bg-blue a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.bg-fern {
+    background: url('images/fern.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.margin-top-1 {
+    margin-top: .5em;
+}
+
+.margin-top-2 {
+    margin-top: 1em;
+}
+
+.margin-bottom-1 {
+    margin-bottom: .5em;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.display-block {
+    display: block;
+}
+
+.text-smaller {
+    font-size: .9em;
+}
+
+.text-small {
+    font-size: 60% !important;
+}
+
+.text-larger {
+    font-size: 1.1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; clear: both;  }
+/* close commented backslash hack */
+
+@media (min-width: 1250px) {
+    .hero-container {
+        background-image: url('images/glee-on-ice-header.jpg')
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .show-s {
+        display: none;
+    }
+
+    .show-l {
+        display: block;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .banner {
+        padding: 1em;
+        margin: 1em auto;
+    }
+
+    .hide-s {
+        display: none;
+    }
+
+    .show-s {
+        display: block;
+    }
+
+    section {
+        padding: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+
+    .column-wrapper {
+        flex-direction: column;
+    }
+
+    .content-right,
+    .content-left {
+        width: 100%;
+    }
+
+    .hero-container {
+        background-image: url('images/glee-on-ice-header.jpg');
+        background-position: bottom;
+    }
+
+    .banner {
+        background: rgba(255, 255, 255, .65);
+        margin: 0 auto !important;
+        padding: 2em;
+    }
+
+    .hide-xs {
+        display: none;
+    }
+
+    .round-pic {
+        margin: 2em auto;
+        padding: 0;
+        width: 90%;
+        float: none;
+        display: block;
+    }
+
+    .right-footer {
+        clear: both;
+    }
+
+    .nav {
+        opacity: 1;
+    }
+
+    .nav-item {
+        margin: 0 .25em;
+        font-size: 1.1em;
+    }
+}
+
+
+/*!
+ * GitHub Light v0.3.0
+ * Copyright (c) 2012 - 2016 GitHub, Inc.
+ * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
+ */
+
+.pl-c1,.pl-s .pl-v {
+    color: #0086b3
+}
+
+.pl-e,.pl-en {
+    color: #795da3
+}
+
+.pl-smi,.pl-s .pl-s1 {
+    color: #333
+}
+
+.pl-ent {
+    color: #63a35c
+}
+
+.pl-k {
+    color: #a71d5d
+}
+
+.pl-s,.pl-pds,.pl-s .pl-pse .pl-s1,.pl-sr,.pl-sr .pl-cce,.pl-sr .pl-sre,.pl-sr .pl-sra {
+    color: #183691
+}
+
+.pl-v,.pl-smw {
+    color: #ed6a43
+}
+
+.blob-code {
+    position: relative;
+    padding-right: 2em;
+    padding-left: 2em;
+    line-height: 1.5em;
+    vertical-align: top;
+}
+
+.hilary-convo {
+    max-width: 640px;
+}
