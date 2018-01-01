@@ -380,6 +380,12 @@ a.btn:focus {
     }
 }
 
+@media (min-width: 600px) {
+    .show-xs {
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     h1 {
         text-align: center;
