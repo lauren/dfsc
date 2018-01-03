@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     var navLinks = $('[data-ui="nav-item"]'),
         navElement = $('[data-ui="nav"]'),
+        copyrightYearSpan = $('[data-element="year"]'),
         topOfNav = navElement[0].offsetTop,
         navHeight = navElement[0].offsetHeight,
         windowElement = $(window);
@@ -17,6 +18,8 @@ $(document).ready(function () {
             navElement.removeClass('nav-stuck');
         }
     };
+
+    copyrightYearSpan.html((new Date().getFullYear()));
 
     windowElement.on('scroll', function () {
         resetNavClass();
